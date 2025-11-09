@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gil Clarke</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .bio {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: #333;
+      font-size: 1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.6s;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 0.7rem 1.6rem;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.3rem; }
+      .bio { font-size: 0.95rem; padding: 1rem; }
+      .links { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Gil Clarke</h1>
+  <div class="bio">
+    First-year Computer Science student at the University of Bristol. Interested in programming, mathematics, and system architecture with experience in C, Verilog, Haskell, Python, Java, and React.
+  </div>
+  
+  <div class="links">
+    <a href="https://instagram.com/gil.exe_" target="_blank">Instagram</a>
+    <a href="https://github.com/gilclarke" target="_blank">GitHub</a>
+  </div>
+
+</body>
+</html>
